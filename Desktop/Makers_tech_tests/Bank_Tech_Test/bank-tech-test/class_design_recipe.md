@@ -35,7 +35,7 @@ Make a list of examples of how the class will behave in different situations.
 # 1
 account = new Account()
 account.balance
-expect.account.balaance # => "0"
+expect.account.balance # => "0"
 
 # 2
 reminder = Reminder("Kay")

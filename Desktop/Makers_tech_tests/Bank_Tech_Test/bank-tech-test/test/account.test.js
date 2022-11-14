@@ -9,4 +9,17 @@ describe('Account', () => {
 
   test('Should start with an initial balance of 0', () => {
     expect(account.balance).toEqual(0)});
+  
+  test('Depositor should be able to add funds', () => {
+    account.add(1000);
+
+    expect(account.balance).toEqual(1000)
+  });
+  
+  test('Should allow a Account Holder to withdraw money from their account', () => {
+    account.add(1000);
+    account.withdraw(500);
+
+    expect(account.balance).toEqual(500);
+  });
 })
