@@ -11,7 +11,15 @@ class Format {
     convertToCurrency(number) {
         return number.toFixed(2)
     }
+
+    transactionColumns(transaction) {
+        const transactionAmount = this.convertToCurrency(
+          transaction.amount
+        );
     
+        if (transaction.type == "deposit") return ` ${transactionAmount} || `;
+        return ` || ${transactionAmount} `;
+    }
 }
 
 module.exports = Format;
