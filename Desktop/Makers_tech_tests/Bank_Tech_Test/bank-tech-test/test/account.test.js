@@ -23,5 +23,10 @@ describe('Account', () => {
     expect(account.balance).toEqual(500);
   });
 
-  
+  test('Should allow a Account Holder to get their balance', () => {
+    account.add(1000);
+    account.withdraw(500);
+
+    expect(account.getBalance()).toEqual("500.00");
+  });
 })
