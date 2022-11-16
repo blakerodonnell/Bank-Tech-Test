@@ -1,5 +1,7 @@
 const Format = require('../lib/format')
 
+jest.useFakeTimers().setSystemTime(new Date("2022-11-16"));
+
 describe("todaysDate()", () => {
 const format = new Format()
     it("returns today's date formatted", () => {

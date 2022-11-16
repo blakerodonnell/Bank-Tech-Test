@@ -4,6 +4,8 @@ const Account = require("../lib/account");
 const account = new Account();
 const statement = new Statement(account);
 
+jest.useFakeTimers().setSystemTime(new Date("2022-11-16"));
+
 describe('statement', () => { it("returns statement header", () => {
     expect(statement.getHeader()).toEqual(
       "date || credit || debit || balance"
