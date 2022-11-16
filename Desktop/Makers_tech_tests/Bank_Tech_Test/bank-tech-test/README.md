@@ -33,27 +33,27 @@ $ jest
 
 From project directory
 
-# Run node
+## Run node
 
 $ node
 
-Create a new bankApp instance:
+## Create a new bankApp instance:
 
 $ const BankApp = require("./bankApp")
 
 $ const bankApp = new BankApp()
 
-Make a deposit
+## Make a deposit
 
 $ bankApp.deposit(1000) 
 
 $ bankApp.deposit(2000) 
 
-Make a withdrawal
+## Make a withdrawal
 
 $ bankApp.withdraw(500) 
 
-Print the statement
+## Print the statement
 
 $ bankApp.printStatement()
 
