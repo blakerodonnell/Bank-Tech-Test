@@ -19,6 +19,18 @@ class bankApp {
     this.statement.add(transaction);
   }
 
+  withdraw(amount) {
+    const withdrawal = parseFloat(amount);
+
+    let transaction = {
+      amount: withdrawal,
+      type: "withdrawal",
+    };
+
+    this.balance.withdraw(withdrawal);
+    this.statement.add(transaction);
+  }
+
   getStatement() {
     return this.statement.get();
   }

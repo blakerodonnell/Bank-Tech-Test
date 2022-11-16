@@ -14,4 +14,16 @@ describe("Bank", () => {
       expect(statement.includes(expectedRow)).toBe(true);
     });
 
+    describe("withdraw()", () => {
+        let bank = new bankApp();
+        it("Removes 24.75 from the balance", () => {
+          let statement = bank.getStatement();
+          bank.deposit(100);
+          bank.withdraw(24.75);
+    
+          let expectedRow = "16/11/2022 || || 24.75 || 75.25";
+          expect(statement[1]).toEqual(expectedRow);
+          expect(statement.includes(expectedRow)).toBe(true);
+        });
+    });
 });
