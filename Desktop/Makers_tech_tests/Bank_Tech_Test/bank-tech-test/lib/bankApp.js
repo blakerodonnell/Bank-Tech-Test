@@ -34,6 +34,13 @@ class bankApp {
   getStatement() {
     return this.statement.get();
   }
+
+  printStatement() {
+    console.log(this.statement.getHeader());
+    this.statement.get().forEach((statementRow) => {
+      console.log(statementRow);
+    });
+  }
 }
 
   module.exports = bankApp;
