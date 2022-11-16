@@ -34,7 +34,7 @@ describe("add()", () => {
         statement.add(deposit);
   
         const statementPrint = statement.get();
-        expect(statementPrint[0]).toEqual("15/11/2022 || 500.00 || || 500.00")
+        expect(statementPrint[0]).toEqual("16/11/2022 || 500.00 || || 500.00")
     });
 
     it("Adds a withdrawal and balance is updated", () => {
@@ -48,6 +48,6 @@ describe("add()", () => {
   
         const statementPrint = statement.get();
   
-        expect(statementPrint[0]).toEqual("15/11/2022 || || 50.00 || 450.00")
+        expect(statementPrint[0]).toEqual("16/11/2022 || || 50.00 || 450.00")
     });
 });

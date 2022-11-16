@@ -3,7 +3,7 @@ const Format = require('../lib/format')
 describe("todaysDate()", () => {
 const format = new Format()
     it("returns today's date formatted", () => {
-      expect(format.todaysDate()).toEqual("15/11/2022");
+      expect(format.todaysDate()).toEqual("16/11/2022");
     });
 });
 
