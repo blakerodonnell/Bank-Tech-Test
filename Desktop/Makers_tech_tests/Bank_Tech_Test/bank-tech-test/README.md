@@ -17,13 +17,11 @@ $ npm init -y
 
 # Testing
 
-Add the jest package to our project
-(this will update package.json and package-lock.json)
+Add the jest package to our project (this will update package.json and package-lock.json)
 
 $ npm add jest
 
-Also install jest "globally"
-(this is so we can run the `jest` command)
+Also install jest "globally" (this is so we can run the `jest` command)
 
 $ npm install -g jest
 
@@ -32,23 +30,31 @@ Run the tests
 $ jest
 
 # Using the programme
+
 From project directory
 
 # Run node
+
 $ node
 
 Create a new bankApp instance:
+
 $ const BankApp = require("./bankApp")
+
 $ const bankApp = new BankApp()
 
 Make a deposit
+
 $ bankApp.deposit(1000) 
+
 $ bankApp.deposit(2000) 
 
 Make a withdrawal
+
 $ bankApp.withdraw(500) 
 
 Print the statement
+
 $ bankApp.printStatement()
 
 # Reflections
